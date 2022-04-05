@@ -50,7 +50,9 @@ jobs:
           git add .
           git commit -m "Update via CircleCI"
           # Push quietly to prevent showing the token in log
-          git push -q https://$GITHUB_PAT@github.com/alexandrust88/CircleCI-Webapp-CI.git master
+          git branch argocd
+          git checkout argocd
+          git push -q https://$GITHUB_PAT@github.com/alexandrust88/CircleCI-Webapp-CI.git origin argocd
 
 workflows:
   version: 2
