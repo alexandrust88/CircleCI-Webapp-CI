@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:latest
 RUN mkdir /app
 COPY webappdemo /app/
 WORKDIR /app
