@@ -52,7 +52,7 @@ jobs:
           # Push quietly to prevent showing the token in log
           git branch argocd
           git checkout argocd
-          git push -q https://$GITHUB_PAT@github.com/alexandrust88/CircleCI-Webapp-CI.git origin argocd
+          git push -q https://$GITHUB_PAT@github.com/alexandrust88/CircleCI-Webapp-CI.git  
 
 workflows:
   version: 2
